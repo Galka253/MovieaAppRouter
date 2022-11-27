@@ -1,38 +1,163 @@
 .App {
-  text-align: center;
+  background-color: black;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Movies {
+  margin: 50px 40px;
+  padding: 15px;
+  background-color: grey;
+  border-radius: 10px;
   display: flex;
+  gap: 15px;
   flex-direction: column;
-  align-items: center;
+  width: 300px;
+  height: 450px;
+}
+img {
+  width: 100px;
+  height: 200px;
+}
+
+.test {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.AddMovie {
+  appearance: button;
+  background-color: #1899d6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.AddMovie:after {
+  background-clip: padding-box;
+  background-color: #1cb0f6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.AddMovie:main,
+.AddMovie:focus {
+  user-select: auto;
+}
+
+.AddMovie:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.AddMovie:disabled {
+  cursor: auto;
+}
+.Close {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #ff7e31, #e62c03);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, -apple-system, system-ui, Roboto, "Helvetica Neue", Arial,
+    sans-serif;
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  margin: 10px 10px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+
+  z-index: 9;
+  border: 0;
+  transition: box-shadow 0.2s;
+}
+
+.Close:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
+.Submit {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #31c5ff, #5a03e6);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, -apple-system, system-ui, Roboto, "Helvetica Neue", Arial,
+    sans-serif;
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  margin: 10px 10px;
+  z-index: 9;
+  border: 0;
+  transition: box-shadow 0.2s;
+}
+
+.Submit :hover {
+  box-shadow: rgba(0, 131, 253, 0.5) 0 3px 8px;
+}
+label {
+  display: block;
+  color: #31c5ff;
+  font-size: 25px;
+}
+input {
+  font-size: 25px;
+  color: #5a03e6;
+  border-radius: 5px;
+}
+.Search {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
