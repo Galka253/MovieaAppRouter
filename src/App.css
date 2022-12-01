@@ -1,5 +1,5 @@
 .App {
-  background-color: black;
+  background-image: linear-gradient(lightblue, darkblue);
 }
 .Movies {
   margin: 50px 40px;
@@ -7,14 +7,24 @@
   background-color: grey;
   border-radius: 10px;
   display: flex;
+  align-items: center;
   gap: 15px;
   flex-direction: column;
   width: 300px;
   height: 450px;
 }
-img {
-  width: 100px;
-  height: 200px;
+.before {
+  width: 200px;
+  height: 400px;
+}
+.after {
+  width: 256px;
+  height: 384px;
+}
+.Link {
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .test {
@@ -160,4 +170,10 @@ input {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 10px;
+}
+.DescPage {
+  display: block;
+  padding: 20px 350px 20px 120px;
+  margin: 20px auto;
 }
